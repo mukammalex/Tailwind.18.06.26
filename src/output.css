@@ -636,6 +636,9 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .bg-\[\#0F172A\] {
+    background-color: #0F172A;
+  }
   .bg-\[\#EA580C\] {
     background-color: #EA580C;
   }
@@ -802,6 +805,16 @@
   .md\:hidden {
     @media (width >= 48rem) {
       display: none;
+    }
+  }
+  .md\:max-w-400 {
+    @media (width >= 48rem) {
+      max-width: calc(var(--spacing) * 400);
+    }
+  }
+  .md\:flex-row {
+    @media (width >= 48rem) {
+      flex-direction: row;
     }
   }
   .md\:flex-row-reverse {
