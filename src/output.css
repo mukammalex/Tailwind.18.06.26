@@ -439,6 +439,9 @@
   .left-25 {
     left: calc(var(--spacing) * 25);
   }
+  .left-30 {
+    left: calc(var(--spacing) * 30);
+  }
   .left-35 {
     left: calc(var(--spacing) * 35);
   }
@@ -583,8 +586,14 @@
   .w-70 {
     width: calc(var(--spacing) * 70);
   }
+  .max-w-0 {
+    max-width: 0;
+  }
   .max-w-300 {
     max-width: calc(var(--spacing) * 300);
+  }
+  .max-w-400 {
+    max-width: calc(var(--spacing) * 400);
   }
   .cursor-pointer {
     cursor: pointer;
@@ -600,6 +609,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .justify-around {
+    justify-content: space-around;
   }
   .justify-baseline {
     justify-content: baseline;
@@ -624,6 +636,15 @@
   }
   .gap-10 {
     gap: calc(var(--spacing) * 10);
+  }
+  .gap-20 {
+    gap: calc(var(--spacing) * 20);
+  }
+  .gap-40 {
+    gap: calc(var(--spacing) * 40);
+  }
+  .gap-80 {
+    gap: calc(var(--spacing) * 80);
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
