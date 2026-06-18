@@ -663,6 +663,9 @@
   .bg-\[\#EA580C\] {
     background-color: #EA580C;
   }
+  .bg-\[\#FACC15\] {
+    background-color: #FACC15;
+  }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
@@ -677,6 +680,9 @@
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
+  }
+  .text-center {
+    text-align: center;
   }
   .text-2xl {
     font-size: var(--text-2xl);
@@ -896,6 +902,11 @@
   .md\:bg-\[\#F1F5F9\] {
     @media (width >= 48rem) {
       background-color: #F1F5F9;
+    }
+  }
+  .md\:px-15 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 15);
     }
   }
   .md\:text-center {
