@@ -663,17 +663,32 @@
   .bg-\[\#EA580C\] {
     background-color: #EA580C;
   }
+  .bg-\[\#F3E8FF\] {
+    background-color: #F3E8FF;
+  }
   .bg-\[\#FACC15\] {
     background-color: #FACC15;
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
   }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
+  .px-5 {
+    padding-inline: calc(var(--spacing) * 5);
+  }
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
   .px-10 {
     padding-inline: calc(var(--spacing) * 10);
+  }
+  .py-1 {
+    padding-block: var(--spacing);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
@@ -720,9 +735,28 @@
   .text-\[20px\] {
     font-size: 20px;
   }
+  .leading-2 {
+    --tw-leading: calc(var(--spacing) * 2);
+    line-height: calc(var(--spacing) * 2);
+  }
+  .leading-5 {
+    --tw-leading: calc(var(--spacing) * 5);
+    line-height: calc(var(--spacing) * 5);
+  }
+  .leading-10 {
+    --tw-leading: calc(var(--spacing) * 10);
+    line-height: calc(var(--spacing) * 10);
+  }
+  .leading-20 {
+    --tw-leading: calc(var(--spacing) * 20);
+    line-height: calc(var(--spacing) * 20);
+  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .text-\[\#6B21A8\] {
+    color: #6B21A8;
   }
   .text-\[\#777\] {
     color: #777;
@@ -787,6 +821,11 @@
   .md\:left-80 {
     @media (width >= 48rem) {
       left: calc(var(--spacing) * 80);
+    }
+  }
+  .md\:mt-10 {
+    @media (width >= 48rem) {
+      margin-top: calc(var(--spacing) * 10);
     }
   }
   .md\:mt-20 {
@@ -854,6 +893,21 @@
       align-items: center;
     }
   }
+  .md\:items-start {
+    @media (width >= 48rem) {
+      align-items: flex-start;
+    }
+  }
+  .md\:justify-around {
+    @media (width >= 48rem) {
+      justify-content: space-around;
+    }
+  }
+  .md\:justify-baseline {
+    @media (width >= 48rem) {
+      justify-content: baseline;
+    }
+  }
   .md\:justify-between {
     @media (width >= 48rem) {
       justify-content: space-between;
@@ -904,9 +958,44 @@
       background-color: #F1F5F9;
     }
   }
+  .md\:p-5 {
+    @media (width >= 48rem) {
+      padding: calc(var(--spacing) * 5);
+    }
+  }
+  .md\:px-2 {
+    @media (width >= 48rem) {
+      padding-inline: calc(var(--spacing) * 2);
+    }
+  }
   .md\:px-15 {
     @media (width >= 48rem) {
       padding-inline: calc(var(--spacing) * 15);
+    }
+  }
+  .md\:py-0 {
+    @media (width >= 48rem) {
+      padding-block: 0;
+    }
+  }
+  .md\:py-1 {
+    @media (width >= 48rem) {
+      padding-block: var(--spacing);
+    }
+  }
+  .md\:py-\[-1\] {
+    @media (width >= 48rem) {
+      padding-block: -1;
+    }
+  }
+  .md\:py-\[-1px\] {
+    @media (width >= 48rem) {
+      padding-block: -1px;
+    }
+  }
+  .md\:py-\[-5px\] {
+    @media (width >= 48rem) {
+      padding-block: -5px;
     }
   }
   .md\:text-center {
@@ -950,6 +1039,12 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
+  .md\:leading-10 {
+    @media (width >= 48rem) {
+      --tw-leading: calc(var(--spacing) * 10);
+      line-height: calc(var(--spacing) * 10);
+    }
+  }
   .md\:font-bold {
     @media (width >= 48rem) {
       --tw-font-weight: var(--font-weight-bold);
@@ -962,6 +1057,10 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-leading {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
@@ -970,6 +1069,7 @@
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
+      --tw-leading: initial;
       --tw-font-weight: initial;
     }
   }
